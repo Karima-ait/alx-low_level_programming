@@ -1,21 +1,20 @@
 #include <stdio.h>
 /**
- * main - prints the alphabet in lowercase, and then in uppercase
+ * main - prints the alphabet in lowercass.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-char letter;
-for (letter = 'a'; letter <= 'z'; letter++)
+char c = 'a';
+while (c <= 'z')
 {
-putchar(letter);
+if (c != 'e' && c != 'q')
+{
+putchar(c);
 }
-for (letter = 'A'; letter <= 'Z'; letter++)
-{
-putchar(letter);
+c++;
 }
 putchar('\n');
-
 return (0);
 }
